@@ -30,10 +30,6 @@ namespace PointsToTriangles
         {
             // Generate points.
             var points = Generate.RandomPoints(50, new Rectangle(0, 0, 100, 100));
-            ////points.ToJsonFile(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "points.json"));
-
-            //var points = JsonExt.FromJsonFile<List<Vertex>>("F:\\DemoProjects\\PointsToTriangles\\PointsToTriangles\\bin\\Debug\\net7.0-windows\\points.json");
-
 
             _mesh = GetMesh1(points);
             SKElement.InvalidateVisual();
